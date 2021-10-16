@@ -1,7 +1,11 @@
 const express = require('express')
+const connectDB = require('./config/database')
 const app = express()
+const connectDB = require("./config/database")
 
 require('dotenv').config({path: './config/.env'})
+
+connectDB()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
