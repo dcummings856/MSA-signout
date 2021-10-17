@@ -1,7 +1,7 @@
 const express = require('express')
 const connectDB = require('./config/database')
 const app = express()
-const connectDB = require("./config/database")
+const mainRoute = require('./routes/main')
 
 require('dotenv').config({path: './config/.env'})
 
@@ -13,9 +13,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.render('main.ejs')
-})
+app.use('/', mainRoute)
 
 app.listen(process.env.PORT || PORT), () => {
   console.log(`Listening on ${PORT}`)
