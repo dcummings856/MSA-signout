@@ -12,9 +12,9 @@ module.exports = {
   addSignouts: async (req, res) => {
     try{
       await Signouts.create({
-        name: req.name,
-        msa: req.msa,
-        key: req.key,
+        name: req.body.name,
+        msa: req.body.msa,
+        key: req.body.key,
 
       })
       res.redirect('/')

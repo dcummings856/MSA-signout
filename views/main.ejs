@@ -9,21 +9,26 @@
 <body>
   <h1>MSA/Key Signout</h1>
   
-  <form>
+  <form action="/add" method="POST">
     <label for="name">Name</label>
-    <input type="text" name="name" placeholder="name">
+    <input type="text" id="name" name="name" placeholder="name">
 
     <label for="msa">MSA#</label>
-    <input type="text" name="msa" placeholder="MSA#">
+    <input type="text" id="msa" name="msa" placeholder="MSA#">
+
+    <label for="key">Key</label>
+    <input type="text" id="key" name="key" placeholder="key">
 
     <label for="date-time"></label>
 
     <button type="submit">Enter</button>
   </form>
 
-  <div>
+  <div id="signout-div">
     <ul>
-      
+      <% signouts.forEach(signout => { %>
+        <li><%- signout.name %> <%- signout.msa %> <%- signout.key %></li>
+      <% }) %>
     </ul>
   </div>
 
