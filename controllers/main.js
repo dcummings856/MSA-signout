@@ -15,7 +15,7 @@ module.exports = {
         name: req.body.name,
         msa: req.body.msa,
         key: req.body.key,
-
+        createdAt: req.body.Date,
       })
       res.redirect('/')
     }catch(err) {

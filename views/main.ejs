@@ -27,7 +27,7 @@
   <div id="signout-div">
     <ul>
       <% signouts.forEach(signout => { %>
-        <li><%- signout.name %> <%- signout.msa %> <%- signout.key %></li>
+        <li><%- signout.name %> <%- signout.msa %> <%- signout.key %> <%- signout.createdAt %></li>
       <% }) %>
     </ul>
   </div>
