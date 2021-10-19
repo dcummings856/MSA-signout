@@ -13,6 +13,10 @@ const SignoutsSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  complete: {
+    type: Boolean,
+    required: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

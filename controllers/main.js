@@ -15,6 +15,7 @@ module.exports = {
         name: req.body.name,
         msa: req.body.msa,
         key: req.body.key,
+        complete: false,
         createdAt: req.Date,
       })
       res.redirect('/')
