@@ -22,5 +22,16 @@ module.exports = {
     }catch(err) {
       console.log(err)
     }
+  },
+  checkIn: async (req, res) => {
+    try{
+      await Signouts.findOneAndUpdate(
+        {_id: req.params.id },
+        { complete: true },
+      )
+      res.redirect('/')
+    }catch(err) {
+      console.log(err)
+    }
   }
 }

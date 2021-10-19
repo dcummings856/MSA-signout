@@ -27,6 +27,11 @@
     <ul>
       <% signouts.forEach(signout => { %>
         <li class='<%= signout.complete == true ? 'completed' : 'not'%>'>
+
+          <form action="/checkin/<%= signout.id %>?_method=PUT" method="POST">
+            <button type="submit">Check In</button>
+          </form>
+
           <span id="signout-name"><%- signout.name %></span> 
           <span id="signout-msa"><%- signout.msa %></span> 
           <span id="signout-key"><%- signout.key %></span> 
