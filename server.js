@@ -4,8 +4,6 @@ const app = express()
 const methodOverride = require("method-override")
 const mainRoute = require('./routes/main')
 
-const cors = require('cors')
-
 require('dotenv').config({path: './config/.env'})
 
 connectDB()
