@@ -1,0 +1,20 @@
+h1, form, #signout-div {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 12px;
+}
+
+span {
+  padding: 0 12px;
+}
+
+#signout-div {
+  font-size: 22px;
+}
+
+#signout-name {
+  padding-right: 10px;
+}
