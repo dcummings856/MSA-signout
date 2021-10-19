@@ -10,6 +10,9 @@ ul {
 li {
   list-style: none;
   padding-bottom: 12px;
+  margin: 8px 425px;
+  background-color: rgb(34, 78, 25);
+  box-shadow: 10px 5px 5px gray;
 }
 
 #checkin-form {
@@ -20,6 +23,8 @@ li {
 
 span {
   padding: 0 12px;
+  color: white;
+  font-weight: bold;
 }
 
 #signout-div {
@@ -30,6 +35,6 @@ span {
   padding-right: 10px;
 }
 
-/* .completed {
+.completed {
   display: none;
-} */
+}
