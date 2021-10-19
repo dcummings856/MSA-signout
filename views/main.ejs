@@ -19,15 +19,17 @@
     <label for="key">Key</label>
     <input type="text" id="key" name="key" placeholder="key">
 
-    <label for="date-time"></label>
-
     <button type="submit">Enter</button>
   </form>
 
   <div id="signout-div">
     <ul>
       <% signouts.forEach(signout => { %>
-        <li><%- signout.name %> <%- signout.msa %> <%- signout.key %> <%- signout.createdAt %></li>
+        <li>
+          <span id="signout-name"><%- signout.name %></span> 
+          <span id="signout-msa"><%- signout.msa %></span> 
+          <span id="signout-key"><%- signout.key %></span> 
+          <span id="signout-createdAt"><%- signout.createdAt %></span></li>
       <% }) %>
     </ul>
   </div>
