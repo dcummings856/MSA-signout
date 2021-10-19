@@ -4,6 +4,8 @@ const app = express()
 const methodOverride = require("method-override")
 const mainRoute = require('./routes/main')
 
+const cors = require('cors')
+
 require('dotenv').config({path: './config/.env'})
 
 connectDB()
@@ -16,8 +18,10 @@ app.use(express.json())
 
 app.use(methodOverride("_method"))
 
+app.use(cors())
+
 app.use('/', mainRoute)
 
-app.listen(process.env.PORT || PORT), () => {
+app.listen(process.env.PORT), () => {
   console.log(`Listening on ${PORT}`)
 }
