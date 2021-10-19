@@ -16,8 +16,6 @@ app.use(express.json())
 
 app.use(methodOverride("_method"))
 
-app.use(cors())
-
 app.use('/', mainRoute)
 
 app.listen(process.env.PORT), () => {
