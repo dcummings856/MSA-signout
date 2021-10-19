@@ -2,9 +2,20 @@ h1, form, #signout-div {
   text-align: center;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
 li {
   list-style: none;
   padding-bottom: 12px;
+}
+
+#checkin-form {
+  display: inline;
+  height: 15px;
+
 }
 
 span {
@@ -18,3 +29,7 @@ span {
 #signout-name {
   padding-right: 10px;
 }
+
+/* .completed {
+  display: none;
+} */
