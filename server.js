@@ -1,6 +1,7 @@
 const express = require('express')
 const connectDB = require('./config/database')
 const app = express()
+const morgan = require('morgan')
 const methodOverride = require("method-override")
 const mainRoute = require('./routes/main')
 
@@ -13,6 +14,8 @@ app.use(express.static('public'))
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+
+app.use(morgan("dev"))
 
 app.use(methodOverride("_method"))
 
