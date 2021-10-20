@@ -9,7 +9,7 @@ ul {
 
 li {
   list-style: none;
-  padding-bottom: 12px;
+  padding: 8px 0;
   margin: 8px 425px;
   background-color: rgb(34, 78, 25);
   box-shadow: 10px 5px 5px gray;
