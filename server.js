@@ -21,6 +21,6 @@ app.use(methodOverride("_method"))
 
 app.use('/', mainRoute)
 
-app.listen(process.env.PORT), () => {
+app.listen(process.env.PORT, () => {
   console.log('Listening...')
-}
+})
