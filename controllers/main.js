@@ -18,7 +18,8 @@ module.exports = {
         complete: false,
         createdAt: req.Date,
       })
-      res.reload()
+      console.log('new signout')
+      res.redirect('/')
     }catch(err) {
       console.log(err)
     }
@@ -29,7 +30,8 @@ module.exports = {
         {_id: req.params.id },
         { complete: true },
       )
-      res.reload()
+      console.log('checked in')
+      res.redirect('/')
     }catch(err) {
       console.log(err)
     }
