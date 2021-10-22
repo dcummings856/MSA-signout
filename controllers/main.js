@@ -18,7 +18,7 @@ module.exports = {
         complete: false,
         createdAt: req.Date,
       })
-      res.redirect('/')
+      res.reload()
     }catch(err) {
       console.log(err)
     }
@@ -29,7 +29,7 @@ module.exports = {
         {_id: req.params.id },
         { complete: true },
       )
-      res.redirect('/')
+      res.reload()
     }catch(err) {
       console.log(err)
     }
