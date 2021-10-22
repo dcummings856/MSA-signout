@@ -19,7 +19,7 @@ module.exports = {
         createdAt: req.Date,
       })
       console.log('new signout')
-      res.redirect('/')
+      res.redirect('https://msa-signout.herokuapp.com/')
     }catch(err) {
       console.log(err)
     }
@@ -31,7 +31,7 @@ module.exports = {
         { complete: true },
       )
       console.log('checked in')
-      res.redirect('/')
+      res.redirect('https://msa-signout.herokuapp.com/')
     }catch(err) {
       console.log(err)
     }
