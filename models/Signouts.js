@@ -24,6 +24,13 @@ const SignoutsSchema = new mongoose.Schema({
 },
 {
   timestamps: true,
+},
+{
+  writeConcern: {
+    w: 'majority',
+    j: true,
+    wtimeout: 1000
+  }
 })
 
 module.exports = mongoose.model('Signouts', SignoutsSchema)
