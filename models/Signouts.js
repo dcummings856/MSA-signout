@@ -7,7 +7,7 @@ const SignoutsSchema = new mongoose.Schema({
   },
   msa: {
     type: Number,
-    required: true,
+    required: false,
   },
   key: {
     type: String,
@@ -18,8 +18,7 @@ const SignoutsSchema = new mongoose.Schema({
     required: true,
   },
   createdAt: {
-    type: Date,
-    default: Date.now,
+    type: String,
   },
 },
 {

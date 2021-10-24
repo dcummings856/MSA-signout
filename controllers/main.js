@@ -1,4 +1,5 @@
 const Signouts = require('../models/Signouts')
+const { DateTime } = require('luxon')
 
 module.exports = {
   getMain: async (req, res) => {
@@ -11,12 +12,14 @@ module.exports = {
   },
   addSignouts: async (req, res) => {
     try{
+      let dt = DateTime.now()
+      let dtLocal = dt.toLocaleString(DateTime.DATETIME_MED)
       await Signouts.create({
         name: req.body.name,
         msa: req.body.msa,
         key: req.body.key,
         complete: false,
-        createdAt: req.Date,
+        createdAt: dtLocal,
       })
       console.log('new signout')
       res.redirect('/')
