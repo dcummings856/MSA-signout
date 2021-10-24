@@ -1,8 +1,8 @@
 # MSA-Signout
 Application used to track signouts for MSAs and keys.
 
-# Tools used
-HTML, CSS, Javascript, NodeJS, Express
+# Packages/Dependencies used
+dotenv, ejs, express, luxon, method-override, mongodb, mongoose, morgan
 
 ---
 
