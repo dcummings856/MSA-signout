@@ -12,7 +12,7 @@ module.exports = {
   },
   addSignouts: async (req, res) => {
     try{
-      let dt = DateTime.now()
+      let dt = DateTime.now().setZone("America/New_York")
       let dtLocal = dt.toLocaleString(DateTime.DATETIME_MED)
       await Signouts.create({
         name: req.body.name,
