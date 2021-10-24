@@ -17,7 +17,7 @@
 
     <input type="text" id="key" name="key" placeholder="Key">
 
-    <button type="submit">Enter</button>
+    <button id="add-signout-btn" type="submit">Enter</button>
   </form>
 
   <div id="signout-div">
@@ -26,7 +26,7 @@
         <li class='<%= signout.complete == true ? 'completed' : 'not'%>'>
 
           <form id="checkin-form" action="/checkin/<%= signout.id %>?_method=PUT" method="POST">
-            <button type="submit">Check In</button>
+            <button id="checkin-form-btn" type="submit">Check In</button>
           </form>
 
           <span id="signout-name"><%- signout.name %></span> 

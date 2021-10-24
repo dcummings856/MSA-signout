@@ -2,6 +2,10 @@ h1, form, #signout-div {
   text-align: center;
 }
 
+#add-signout-btn {
+  cursor: pointer;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@ ul {
 li {
   list-style: none;
   padding: 8px 0;
-  margin: 8px 425px;
+  margin: 8px 0;
   background-color: rgb(34, 78, 25);
   box-shadow: 10px 5px 5px gray;
 }
@@ -18,79 +22,26 @@ li {
 #checkin-form {
   display: inline;
   height: 15px;
+}
 
+#checkin-form-btn {
+  cursor: pointer;
 }
 
 span {
-  padding: 0 12px;
+  margin: 0 12px;
   color: white;
   font-weight: bold;
 }
 
 #signout-div {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #signout-name {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .completed {
   display: none;
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
 }
