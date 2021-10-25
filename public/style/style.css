@@ -53,7 +53,7 @@ span {
 
 @media screen and (max-width: 768px) {
   li {
-    width: 100%;
+    width: 90%;
   }
 
   #signout-div {
