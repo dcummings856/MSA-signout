@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MSA/Key Signout</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
   <h1>MSA/Key Signout</h1>
@@ -26,7 +30,7 @@
         <li class='<%= signout.complete == true ? 'completed' : 'not'%>'>
 
           <form id="checkin-form" action="/checkin/<%= signout.id %>?_method=PUT" method="POST">
-            <button id="checkin-form-btn" type="submit">Check In</button>
+            <button id="checkin-form-btn" type="submit"><i class="far fa-check-circle fa-2x"></i></button>
           </form>
 
           <span id="signout-name"><%- signout.name %></span> 

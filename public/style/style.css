@@ -1,4 +1,8 @@
-h1, form, #signout-div {
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, form {
   text-align: center;
 }
 
@@ -9,37 +13,35 @@ h1, form, #signout-div {
 ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 li {
   list-style: none;
-  padding: 8px 0;
-  margin: 8px 0;
-  background-color: rgb(34, 78, 25);
+  margin: 8px;
+  background-color: rgb(30, 66, 23);
   box-shadow: 10px 5px 5px gray;
 }
 
 #checkin-form {
-  display: inline;
-  height: 15px;
+  display: inline-block;
+  height: 18px;
 }
 
 #checkin-form-btn {
+  border: none;
+  text-decoration: none;
+  background: rgb(206, 205, 205);
   cursor: pointer;
 }
 
 span {
   margin: 0 12px;
   color: white;
-  font-weight: bold;
 }
 
 #signout-div {
   font-size: 18px;
-}
-
-#signout-name {
-  margin-right: 10px;
 }
 
 .completed {
