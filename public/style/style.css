@@ -52,6 +52,6 @@ span {
 
 @media screen and (max-width: 768px) {
   li {
-    width: 90%;
+    width: 110%;
   }
 }
