@@ -59,7 +59,7 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-  * {
+  #name, #msa, #key {
     -webkit-appearance: none;
   }
 
