@@ -27,9 +27,10 @@ ul {
 li {
   list-style: none;
   margin: 10px;
-  background-color: rgb(30, 66, 23);
+  /* background-color: rgb(30, 66, 23); */
   box-shadow: 7px 4px 4px gray;
   width: 21%;
+  border: 1px solid rgb(30, 66, 23);
 }
 
 #checkin-form {
@@ -39,14 +40,15 @@ li {
 #checkin-form-btn {
   border: none;
   text-decoration: none;
-  background: rgb(221, 220, 220);
+  background: rgb(30, 66, 23);
+  color: white;
   cursor: pointer;
   height: 36px;
 }
 
 span {
   margin: 0 12px;
-  color: white;
+  color: rgb(30, 66, 23);
 }
 
 .completed {
