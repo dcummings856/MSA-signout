@@ -7,19 +7,21 @@
   <title>MSA/Key Signout</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
   <h1>MSA/Key Signout</h1>
+
+  <a href="/logs">Logs</a>
   
   <form id="signout-form" action="/add" method="POST">
-    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="text" id="name" name="name" placeholder="Name" maxlength="10">
 
-    <input type="text" id="msa" name="msa" placeholder="MSA">
+    <input type="text" id="msa" name="msa" placeholder="MSA" maxlength="2">
 
-    <input type="text" id="key" name="key" placeholder="Key">
+    <input type="text" id="key" name="key" placeholder="Key" maxlength="10">
 
     <button id="add-signout-btn" type="submit">Enter</button>
   </form>

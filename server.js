@@ -20,6 +20,7 @@ app.use(morgan("dev"))
 app.use(methodOverride("_method"))
 
 app.use('/', mainRoute)
+app.use('/logs', mainRoute)
 
 app.listen(process.env.PORT, () => {
   console.log('Listening...')

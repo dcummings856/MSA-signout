@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSA/Key Signout</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+  <a href="/">Home</a>
+
+  <ul>
+    <% signouts.forEach(signout => { %>
+      <li>
+        <span id="signout-name"><%- signout.name %></span> 
+        <span id="signout-msa"><%- signout.msa %></span> 
+        <span id="signout-key"><%- signout.key %></span> 
+        <span id="signout-createdAt"><%- signout.createdAt %></span>
+        <span id="signout-updatedAt"><%- signout.updatedAt %></span>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

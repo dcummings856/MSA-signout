@@ -20,6 +20,7 @@ module.exports = {
         key: req.body.key,
         complete: false,
         createdAt: dtLocal,
+        updatedAt: dtLocal,
       })
       console.log('new signout')
       res.redirect('/')
@@ -38,5 +39,13 @@ module.exports = {
     }catch(err) {
       console.log(err)
     }
-  }
+  },
+  getLogs: async (req, res) => {
+    try{
+      const signouts = await Signouts.find()
+      res.render('logs.ejs', { signouts: signouts })
+    }catch(err) {
+      console.log(err)
+    }
+  },
 }
