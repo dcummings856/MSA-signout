@@ -15,13 +15,14 @@ ul {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 18px;
 }
 
 li {
   list-style: none;
   margin: 10px;
   background-color: rgb(30, 66, 23);
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 7px 4px 4px gray;
   height: 36px;
   width: 25%;
 }
@@ -41,10 +42,6 @@ li {
 span {
   margin: 0 12px;
   color: white;
-}
-
-#signout-div {
-  font-size: 18px;
 }
 
 .completed {
