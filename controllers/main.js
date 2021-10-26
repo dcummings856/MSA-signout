@@ -20,7 +20,7 @@ module.exports = {
         key: req.body.key,
         complete: false,
         createdAt: dtLocal,
-        updatedAt: dtLocal,
+        updatedAt: "",
       })
       console.log('new signout')
       res.redirect('/')
@@ -30,9 +30,13 @@ module.exports = {
   },
   checkIn: async (req, res) => {
     try{
+      let dt = DateTime.now().setZone("America/New_York")
+      let dtLocal = dt.toLocaleString(DateTime.DATETIME_MED)
       await Signouts.findOneAndUpdate(
         {_id: req.params.id },
-        { complete: true },
+        { complete: true,
+          updatedAt: dtLocal
+        },
       )
       console.log('checked in')
       res.redirect('/')

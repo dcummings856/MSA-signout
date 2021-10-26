@@ -20,10 +20,13 @@ const SignoutsSchema = new mongoose.Schema({
   createdAt: {
     type: String,
   },
+  updatedAt: {
+    type: String,
+  }
 },
-{
-  timestamps: true,
-},
+// {
+//   timestamps: true,
+// },
 {
   writeConcern: {
     w: 'majority',
