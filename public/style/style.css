@@ -59,6 +59,10 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    -webkit-appearance: none;
+  }
+
   #signout-form {
     width: 100%;
   }
