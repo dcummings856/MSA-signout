@@ -13,7 +13,13 @@ h1, form {
 }
 
 #add-signout-btn {
+  border: none;
+  text-decoration: none;
   cursor: pointer;
+  height: 30px;
+  width: 50px;
+  color: white;
+  background: rgb(30, 66, 23)
 }
 
 ul {
