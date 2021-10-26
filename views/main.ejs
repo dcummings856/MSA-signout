@@ -14,7 +14,7 @@
 <body>
   <h1>MSA/Key Signout</h1>
   
-  <form action="/add" method="POST">
+  <form id="signout-form" action="/add" method="POST">
     <input type="text" id="name" name="name" placeholder="Name">
 
     <input type="text" id="msa" name="msa" placeholder="MSA">
@@ -24,7 +24,6 @@
     <button id="add-signout-btn" type="submit">Enter</button>
   </form>
 
-  <div id="signout-div">
     <ul>
       <% signouts.forEach(signout => { %>
         <li class='<%= signout.complete == true ? 'completed' : 'not'%>'>
@@ -40,7 +39,6 @@
         </li>
       <% }) %>
     </ul>
-  </div>
 
 </body>
 </html>

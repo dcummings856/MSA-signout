@@ -6,6 +6,12 @@ h1, form {
   text-align: center;
 }
 
+#name, #msa, #key {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 4px;
+}
+
 #add-signout-btn {
   cursor: pointer;
 }
@@ -34,7 +40,7 @@ li {
 #checkin-form-btn {
   border: none;
   text-decoration: none;
-  background: rgb(206, 205, 205);
+  background: rgb(221, 220, 220);
   cursor: pointer;
   height: 36px;
 }
@@ -48,7 +54,15 @@ span {
   display: none;
 }
 
+#name:hover, #msa:hover, #key:hover {
+  background-color: rgb(238, 238, 238);
+}
+
 @media screen and (max-width: 768px) {
+  #signout-form {
+    width: 100%;
+  }
+
   li {
     width: 90%;
   }
