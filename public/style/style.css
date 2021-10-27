@@ -10,7 +10,7 @@ h1, form {
   border: none;
   border-bottom: 1px solid black;
   margin: 4px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 #add-signout-btn {
@@ -21,6 +21,7 @@ h1, form {
   width: 50px;
   color: white;
   background: rgb(30, 66, 23);
+  font-size: 17px;
 }
 
 ul {
