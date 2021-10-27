@@ -10,6 +10,7 @@ h1, form {
   border: none;
   border-bottom: 1px solid black;
   margin: 4px;
+  font-size: 16px;
 }
 
 #add-signout-btn {
@@ -27,7 +28,7 @@ ul {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 li {
@@ -61,7 +62,7 @@ span {
 }
 
 #name:hover, #msa:hover, #key:hover {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(243, 241, 241);
 }
 
 #add-signout-btn:active, #checkin-form-btn:active {
