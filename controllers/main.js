@@ -46,7 +46,7 @@ module.exports = {
   },
   getLogs: async (req, res) => {
     try{
-      const signouts = await Signouts.find().sort({ updatedAt: "asc" })
+      const signouts = await Signouts.find().sort({ updatedAt: "desc" })
       res.render('logs.ejs', { signouts: signouts })
     }catch(err) {
       console.log(err)
