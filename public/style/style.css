@@ -76,6 +76,7 @@ span {
   #name, #msa, #key {
     -webkit-appearance: none;
     border-radius: 0;
+    width: 10%;
   }
 
   #signout-form {
