@@ -10,7 +10,6 @@ h1, form {
   border: none;
   border-bottom: 1px solid black;
   margin: 4px;
-  font-size: 17px;
 }
 
 #add-signout-btn {
@@ -21,7 +20,6 @@ h1, form {
   width: 50px;
   color: white;
   background: rgb(30, 66, 23);
-  font-size: 17px;
 }
 
 ul {
@@ -76,7 +74,6 @@ span {
   #name, #msa, #key {
     -webkit-appearance: none;
     border-radius: 0;
-    width: 10%;
   }
 
   #signout-form {
