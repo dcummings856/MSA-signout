@@ -22,6 +22,10 @@ h1, form {
   background: rgb(30, 66, 23);
 }
 
+a {
+  position: fixed;
+}
+
 ul {
   display: flex;
   flex-direction: column;
